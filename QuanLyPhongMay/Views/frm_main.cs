@@ -44,16 +44,21 @@ namespace QuanLyPhongMay
             frmDangNhap login = null;
             if (login == null || login.IsDisposed)
                 login = new frmDangNhap();
+            Check_Login:
             if (login.ShowDialog()==DialogResult.OK)
             {
                 if(login.txtTenDangNhap.Text=="")
                 {
                     XtraMessageBox.Show("Hãy nhập vào tên đăng nhập!");
+                    goto Check_Login;
                 }
                 if (login.txtMatKhau.Text=="")
                 {
                     XtraMessageBox.Show("Hãy nhập vào mật khẩu!");
+                    goto Check_Login;
                 }
+           
+                
             }
         }
     }
