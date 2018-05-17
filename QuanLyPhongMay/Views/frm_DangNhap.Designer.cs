@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDangNhap));
             this.gpThongTinDangNhap = new DevExpress.XtraEditors.GroupControl();
             this.labTenDangNhap = new DevExpress.XtraEditors.LabelControl();
             this.txtTenDangNhap = new DevExpress.XtraEditors.TextEdit();
@@ -37,11 +39,16 @@
             this.chkGhiNho = new DevExpress.XtraEditors.CheckEdit();
             this.btnDangNhap = new DevExpress.XtraEditors.SimpleButton();
             this.btnThoat = new DevExpress.XtraEditors.SimpleButton();
+            this.imgDangNhap = new DevExpress.Utils.ImageCollection(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.gpThongTinDangNhap)).BeginInit();
             this.gpThongTinDangNhap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkGhiNho.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgDangNhap)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // gpThongTinDangNhap
@@ -56,7 +63,7 @@
             this.gpThongTinDangNhap.Controls.Add(this.txtTenDangNhap);
             this.gpThongTinDangNhap.Controls.Add(this.labMatKhau);
             this.gpThongTinDangNhap.Controls.Add(this.labTenDangNhap);
-            this.gpThongTinDangNhap.Location = new System.Drawing.Point(207, 58);
+            this.gpThongTinDangNhap.Location = new System.Drawing.Point(171, 74);
             this.gpThongTinDangNhap.Name = "gpThongTinDangNhap";
             this.gpThongTinDangNhap.Size = new System.Drawing.Size(389, 170);
             this.gpThongTinDangNhap.TabIndex = 0;
@@ -122,7 +129,10 @@
             // 
             this.btnDangNhap.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangNhap.Appearance.Options.UseFont = true;
-            this.btnDangNhap.Location = new System.Drawing.Point(250, 250);
+            this.btnDangNhap.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnDangNhap.ImageOptions.ImageIndex = 12;
+            this.btnDangNhap.ImageOptions.ImageList = this.imgDangNhap;
+            this.btnDangNhap.Location = new System.Drawing.Point(204, 268);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(119, 37);
             this.btnDangNhap.TabIndex = 1;
@@ -132,29 +142,79 @@
             // 
             this.btnThoat.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.Appearance.Options.UseFont = true;
-            this.btnThoat.Location = new System.Drawing.Point(441, 250);
+            this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnThoat.ImageOptions.ImageIndex = 5;
+            this.btnThoat.ImageOptions.ImageList = this.imgDangNhap;
+            this.btnThoat.Location = new System.Drawing.Point(405, 268);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(119, 37);
             this.btnThoat.TabIndex = 1;
             this.btnThoat.Text = "Thoát";
             // 
+            // imgDangNhap
+            // 
+            this.imgDangNhap.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("imgDangNhap.ImageStream")));
+            this.imgDangNhap.Images.SetKeyName(0, "Bookmark-delete-icon.png");
+            this.imgDangNhap.Images.SetKeyName(1, "Delete-group-icon.png");
+            this.imgDangNhap.Images.SetKeyName(2, "Login.ico");
+            this.imgDangNhap.Images.SetKeyName(3, "networkexplorer_dll_20_10.ico");
+            this.imgDangNhap.Images.SetKeyName(4, "Apps-preferences-system-login-icon.png");
+            this.imgDangNhap.Images.SetKeyName(5, "Bookmark-delete-icon.png");
+            this.imgDangNhap.Images.SetKeyName(6, "Delete-group-icon.png");
+            this.imgDangNhap.Images.SetKeyName(7, "huy.png");
+            this.imgDangNhap.Images.SetKeyName(8, "Login.ico");
+            this.imgDangNhap.Images.SetKeyName(9, "networkexplorer_dll_20_10.ico");
+            this.imgDangNhap.Images.SetKeyName(10, "PhanQuyen.png");
+            this.imgDangNhap.Images.SetKeyName(11, "thoat.png");
+            this.imgDangNhap.Images.SetKeyName(12, "unlock-icon.png");
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Enabled = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(30, 40);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(114, 228);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Red;
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Appearance.Options.UseForeColor = true;
+            this.labelControl1.Location = new System.Drawing.Point(249, 23);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(164, 31);
+            this.labelControl1.TabIndex = 3;
+            this.labelControl1.Text = "ĐĂNG NHẬP";
+            // 
             // frmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 317);
+            this.ClientSize = new System.Drawing.Size(603, 317);
+            this.Controls.Add(this.labelControl1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.gpThongTinDangNhap);
             this.Name = "frmDangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ĐĂNG NHẬP HỆ THỐNG";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmDangNhap_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.gpThongTinDangNhap)).EndInit();
             this.gpThongTinDangNhap.ResumeLayout(false);
             this.gpThongTinDangNhap.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenDangNhap.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtMatKhau.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chkGhiNho.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgDangNhap)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -163,11 +223,14 @@
         private DevExpress.XtraEditors.GroupControl gpThongTinDangNhap;
         private DevExpress.XtraEditors.CheckEdit chkGhiNho;
         private DevExpress.XtraEditors.HyperlinkLabelControl hyplQuenMatKhau;
-        private DevExpress.XtraEditors.TextEdit txtMatKhau;
-        private DevExpress.XtraEditors.TextEdit txtTenDangNhap;
         private DevExpress.XtraEditors.LabelControl labMatKhau;
         private DevExpress.XtraEditors.LabelControl labTenDangNhap;
         private DevExpress.XtraEditors.SimpleButton btnDangNhap;
         private DevExpress.XtraEditors.SimpleButton btnThoat;
+        private DevExpress.Utils.ImageCollection imgDangNhap;
+        public DevExpress.XtraEditors.TextEdit txtMatKhau;
+        public DevExpress.XtraEditors.TextEdit txtTenDangNhap;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
     }
 }

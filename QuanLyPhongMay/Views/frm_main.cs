@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using QuanLyPhongMay.Views;
 
 namespace QuanLyPhongMay
 {
@@ -31,10 +32,28 @@ namespace QuanLyPhongMay
         private void frm_main_FormClosing(object sender, FormClosingEventArgs e)
         {
             DialogResult dr;
-            dr = XtraMessageBox.Show("Bạn có muốn thoát ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            dr = XtraMessageBox.Show("Bạn có muốn thoát khỏi chương trình?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr==DialogResult.No)
             {
                 e.Cancel = true;
+            }
+        }
+
+        private void btnDangNhap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmDangNhap login = null;
+            if (login == null || login.IsDisposed)
+                login = new frmDangNhap();
+            if (login.ShowDialog()==DialogResult.OK)
+            {
+                if(login.txtTenDangNhap.Text=="")
+                {
+                    XtraMessageBox.Show("Hãy nhập vào tên đăng nhập!");
+                }
+                if (login.txtMatKhau.Text=="")
+                {
+                    XtraMessageBox.Show("Hãy nhập vào mật khẩu!");
+                }
             }
         }
     }

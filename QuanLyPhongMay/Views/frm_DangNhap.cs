@@ -22,5 +22,15 @@ namespace QuanLyPhongMay.Views
         {
 
         }
+
+        private void frmDangNhap_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dr;
+            dr = XtraMessageBox.Show("Bạn muốn thoát khỏi đăng nhập?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }
