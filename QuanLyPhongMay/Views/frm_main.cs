@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using DevExpress.XtraEditors;
 
 namespace QuanLyPhongMay
 {
@@ -25,6 +26,16 @@ namespace QuanLyPhongMay
         private void frm_main_Load(object sender, EventArgs e)
         {
             this.GiaoDien();
+        }
+
+        private void frm_main_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DialogResult dr;
+            dr = XtraMessageBox.Show("Bạn có muốn thoát ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr==DialogResult.No)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

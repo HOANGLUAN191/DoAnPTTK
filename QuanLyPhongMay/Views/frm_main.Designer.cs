@@ -39,6 +39,7 @@
             this.btnBackup = new DevExpress.XtraBars.BarButtonItem();
             this.btnRestore = new DevExpress.XtraBars.BarButtonItem();
             this.skinRibbonGalleryBarItem = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
+            this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
             this.rpcQLCT = new DevExpress.XtraBars.Ribbon.RibbonPageCategory();
             this.rbChucNang = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -50,7 +51,6 @@
             this.rpgGiaoDien = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.rbDanhMuc = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.barSubItem1 = new DevExpress.XtraBars.BarSubItem();
             this.ribbonStatusBar1 = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgHeThong)).BeginInit();
@@ -143,6 +143,12 @@
             this.skinRibbonGalleryBarItem.Id = 7;
             this.skinRibbonGalleryBarItem.Name = "skinRibbonGalleryBarItem";
             // 
+            // barSubItem1
+            // 
+            this.barSubItem1.Caption = "barSubItem1";
+            this.barSubItem1.Id = 8;
+            this.barSubItem1.Name = "barSubItem1";
+            // 
             // rpcQLCT
             // 
             this.rpcQLCT.Name = "rpcQLCT";
@@ -218,12 +224,6 @@
             this.ribbonPageGroup3.Name = "ribbonPageGroup3";
             this.ribbonPageGroup3.Text = "ribbonPageGroup3";
             // 
-            // barSubItem1
-            // 
-            this.barSubItem1.Caption = "barSubItem1";
-            this.barSubItem1.Id = 8;
-            this.barSubItem1.Name = "barSubItem1";
-            // 
             // ribbonStatusBar1
             // 
             this.ribbonStatusBar1.Location = new System.Drawing.Point(0, 329);
@@ -241,6 +241,7 @@
             this.Name = "frm_main";
             this.Ribbon = this.ribbonControl1;
             this.StatusBar = this.ribbonStatusBar1;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frm_main_FormClosing);
             this.Load += new System.EventHandler(this.frm_main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgHeThong)).EndInit();
