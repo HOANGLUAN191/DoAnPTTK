@@ -52,15 +52,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-    <Compile Include="frm_DangNhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="frm_DangNhap.cs" />
     <Compile Include="frm_DangNhap.Designer.cs">
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_main.cs">
-=======
+    <Compile Include="frm_main.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -73,7 +69,6 @@
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\frm_main.cs">
->>>>>>> 35d365bc6948e12b0a0e3860977924720aadde26
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\frm_main.Designer.cs">
