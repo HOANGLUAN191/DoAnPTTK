@@ -33,7 +33,7 @@ namespace QuanLyPhongMay
         {
             DialogResult dr;
             dr = XtraMessageBox.Show("Bạn có muốn thoát khỏi chương trình?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (dr==DialogResult.No)
+            if (dr == DialogResult.No)
             {
                 e.Cancel = true;
             }
@@ -45,21 +45,35 @@ namespace QuanLyPhongMay
             if (login == null || login.IsDisposed)
                 login = new frmDangNhap();
             Check_Login:
-            if (login.ShowDialog()==DialogResult.OK)
+            if (login.ShowDialog() == DialogResult.OK)
             {
-                if(login.txtTenDangNhap.Text=="")
+                if (login.txtTenDangNhap.Text == "")
                 {
                     XtraMessageBox.Show("Hãy nhập vào tên đăng nhập!");
                     goto Check_Login;
                 }
-                if (login.txtMatKhau.Text=="")
+                if (login.txtMatKhau.Text == "")
                 {
                     XtraMessageBox.Show("Hãy nhập vào mật khẩu!");
                     goto Check_Login;
                 }
-           
-                
+
+
             }
+        }
+
+        private void btnDoiMatKhau_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmDoiMatKhau changepass = null;
+            if (changepass == null || changepass.IsDisposed)
+                changepass = new frmDoiMatKhau();
+            changepass.ShowDialog();
+
+        }
+
+        private void btnDangXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
         }
     }
 }
