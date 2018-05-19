@@ -50,3 +50,9 @@ D:\HỌC KÌ II NĂM HỌC 2017-2018\PHÂN TÍCH THIẾT KẾ HỆ THỐNG THÔN
 D:\HỌC KÌ II NĂM HỌC 2017-2018\PHÂN TÍCH THIẾT KẾ HỆ THỐNG THÔNG TIN\DoAnPTTK\DoAnPTTK\QuanLyPhongMay\obj\Debug\QuanLyPhongMay.exe.licenses
 D:\HỌC KÌ II NĂM HỌC 2017-2018\PHÂN TÍCH THIẾT KẾ HỆ THỐNG THÔNG TIN\DoAnPTTK\DoAnPTTK\QuanLyPhongMay\obj\Debug\QuanLyPhongMay.exe
 D:\HỌC KÌ II NĂM HỌC 2017-2018\PHÂN TÍCH THIẾT KẾ HỆ THỐNG THÔNG TIN\DoAnPTTK\DoAnPTTK\QuanLyPhongMay\obj\Debug\QuanLyPhongMay.pdb
+D:\HỌC KÌ II NĂM HỌC 2017-2018\PHÂN TÍCH THIẾT KẾ HỆ THỐNG THÔNG TIN\DoAnPTTK\DoAnPTTK\QuanLyPhongMay\bin\Debug\DevExpress.XtraNavBar.v17.2.dll
+D:\HỌC KÌ II NĂM HỌC 2017-2018\PHÂN TÍCH THIẾT KẾ HỆ THỐNG THÔNG TIN\DoAnPTTK\DoAnPTTK\QuanLyPhongMay\bin\Debug\DevExpress.XtraNavBar.v17.2.xml
+D:\HỌC KÌ II NĂM HỌC 2017-2018\PHÂN TÍCH THIẾT KẾ HỆ THỐNG THÔNG TIN\DoAnPTTK\DoAnPTTK\QuanLyPhongMay\bin\Debug\de\DevExpress.XtraNavBar.v17.2.resources.dll
+D:\HỌC KÌ II NĂM HỌC 2017-2018\PHÂN TÍCH THIẾT KẾ HỆ THỐNG THÔNG TIN\DoAnPTTK\DoAnPTTK\QuanLyPhongMay\bin\Debug\es\DevExpress.XtraNavBar.v17.2.resources.dll
+D:\HỌC KÌ II NĂM HỌC 2017-2018\PHÂN TÍCH THIẾT KẾ HỆ THỐNG THÔNG TIN\DoAnPTTK\DoAnPTTK\QuanLyPhongMay\bin\Debug\ja\DevExpress.XtraNavBar.v17.2.resources.dll
+D:\HỌC KÌ II NĂM HỌC 2017-2018\PHÂN TÍCH THIẾT KẾ HỆ THỐNG THÔNG TIN\DoAnPTTK\DoAnPTTK\QuanLyPhongMay\bin\Debug\ru\DevExpress.XtraNavBar.v17.2.resources.dll
