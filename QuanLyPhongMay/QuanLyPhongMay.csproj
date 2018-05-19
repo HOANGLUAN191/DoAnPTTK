@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -67,10 +68,17 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\frm_main.Designer.cs">
+=======
+    <Compile Include="frm_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_main.Designer.cs">
+>>>>>>> d15851e26de6cf074164512f23285a1466ced8c6
       <DependentUpon>frm_main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="Views\frm_DoiMatKhau.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,17 +98,27 @@
       <DependentUpon>frm_DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\frm_main.resx">
+=======
+    <EmbeddedResource Include="frm_main.resx">
+>>>>>>> d15851e26de6cf074164512f23285a1466ced8c6
       <DependentUpon>frm_main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Views\frm_PhanQuyen.resx">
       <DependentUpon>frm_PhanQuyen.cs</DependentUpon>
     </EmbeddedResource>
+=======
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+>>>>>>> d15851e26de6cf074164512f23285a1466ced8c6
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -110,25 +128,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Bookmark-delete-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Delete-group-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Login.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\networkexplorer_dll_20_10.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Apps-preferences-system-login-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
